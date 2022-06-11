@@ -1,11 +1,12 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './CartWidget.css'
 
-const renderCartWidget = () => {
-    return(
-        <i class="bi bi-cart3"></i>
+const CartWidget = () => {
+    return (
+        <i className="bi bi-cart3" ></i>
     )
 }
 
-export default renderCartWidget
+export default CartWidget

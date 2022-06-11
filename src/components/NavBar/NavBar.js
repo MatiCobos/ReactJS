@@ -1,10 +1,10 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import './NavBar.css'
-import CartWidget from '../CartWidget/CartWidget'
+import CartWidget from '../NavBar/CartWidget/CartWidget'
 
 
-const renderNavBar = () =>{
-    return(
+const NavBar = () => {
+    return (
         <Navbar bg="light" expand="lg">
             <Container>
                 <Navbar.Brand href="#home">
@@ -14,19 +14,19 @@ const renderNavBar = () =>{
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                    <Nav.Link href="#home">Inicio</Nav.Link>
-                    <Nav.Link href="#link">Nosotros</Nav.Link>
-                    <Nav.Link href="#home">Contactos</Nav.Link>
-                    <Nav.Link href="#link">Productos</Nav.Link>
-                </Nav>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Inicio</Nav.Link>
+                        <Nav.Link href="#link">Nosotros</Nav.Link>
+                        <Nav.Link href="#home">Contactos</Nav.Link>
+                        <Nav.Link href="#link">Productos</Nav.Link>
+                    </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
                         <a href="#login" >
-                        <CartWidget />
+                            <CartWidget />
                         </a>
-                            
+
                     </Navbar.Text>
                 </Navbar.Collapse>
             </Container>
@@ -35,4 +35,4 @@ const renderNavBar = () =>{
 }
 
 
-export default renderNavBar
+export default NavBar
