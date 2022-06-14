@@ -1,0 +1,40 @@
+.itemCountContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.itemCountContainer p{
+    padding: 0px 10px;
+    margin: 5px;
+}
+
+.btn-primary {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+.btn-primary:hover{
+    border-color: black;
+    background-color: white;
+    color: black;
+}
+
+.btn-primary:disabled{
+    background-color: yellow;
+    color: black;
+    border-color: black;
+}
+
+.btn-primary:active {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+button:focus:not(:focus-visible) {
+    background-color: white;
+    color: black;
+    box-shadow: none ;
+    border-color: black;
+}
