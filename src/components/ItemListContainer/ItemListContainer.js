@@ -3,6 +3,12 @@ import ItemCount from '../ItemCount/ItemCount'
 import './ItemListContainer.css'
 
 const ItemListContainer = ({ title, firstName, lastName, price }) => {
+
+    const addToCart = () =>{
+        return(
+            alert("Agregado al carrito")
+        )
+    }
     return (
         <>
             <div className="itemListContainer">
@@ -11,7 +17,7 @@ const ItemListContainer = ({ title, firstName, lastName, price }) => {
                 <p>{lastName}</p>
                 <p>$ {price}</p>
             </div>
-            <ItemCount initialStock={1} maxStock={5}/>
+            <ItemCount initialStock={1} maxStock={5} addToCart={addToCart}/>
         </>
     )
 }

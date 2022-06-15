@@ -28,7 +28,7 @@ const NavBar = () => {
                             </a>
                         </Navbar.Text>
                         <NavDropdown title="Language" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Inglés</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Español</NavDropdown.Item>
                         </NavDropdown>
                     </Navbar.Collapse>

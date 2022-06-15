@@ -10,8 +10,6 @@ function App() {
     <div className="App">
       <NavBar />
       <ItemListContainer title="Producto" firstName="Matias" lastName="Cobos" price={2500}/>
-      
-
     </div>
   );
 }

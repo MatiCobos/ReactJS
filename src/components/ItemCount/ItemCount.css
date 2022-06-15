@@ -38,3 +38,7 @@ button:focus:not(:focus-visible) {
     box-shadow: none ;
     border-color: black;
 }
+
+.addToCartContainer{
+    padding: 20px;
+}
