@@ -1,4 +1,4 @@
-import React from 'react'
+import {React} from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import './ItemListContainer.css'
 
@@ -11,7 +11,7 @@ const ItemListContainer = ({ title, firstName, lastName, price }) => {
                 <p>{lastName}</p>
                 <p>$ {price}</p>
             </div>
-            {/* <ItemCount /> */}
+            <ItemCount initialStock={1} maxStock={5}/>
         </>
     )
 }
