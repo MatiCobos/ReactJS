@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Button } from 'react-bootstrap';
-import './ItemCount.css'
+import './ItemCount.css';
 
-const ItemCount = ({initialStock, maxStock, addToCart}) =>{
+const ItemCount = ({initialStock, maxStock}) =>{
     const [count, setCount] = useState (initialStock)
     const addCount = () => {
         setCount (count + 1)
@@ -11,11 +11,12 @@ const ItemCount = ({initialStock, maxStock, addToCart}) =>{
         setCount (count - 1)
     }
 
-/*     const addToCart = () =>{
+    const addToCart = (count) =>{
         return(
-            alert("Agregado al carrito")
+            alert(`Agregaste ${count} articulos al carrito`)
         )
-    } */
+    } 
+    
     return(
         <>
             <div className="itemCountContainer">
@@ -24,10 +25,10 @@ const ItemCount = ({initialStock, maxStock, addToCart}) =>{
                 <Button onClick={addCount} disabled={count == maxStock}>+</Button>
             </div>
             <div className="addToCartContainer">
-                <Button onClick={addToCart}>Add to cart</Button>
+                <Button onClick={()=> addToCart (count)}>Add to cart</Button>
             </div>
         </>
     )
 }
 
-export default ItemCount
+export default ItemCount;
