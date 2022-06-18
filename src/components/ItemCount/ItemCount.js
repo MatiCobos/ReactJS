@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import './ItemCount.css';
 
 const ItemCount = ({initialStock, maxStock}) =>{
+    
     const [count, setCount] = useState (initialStock)
     const addCount = () => {
         setCount (count + 1)
@@ -16,7 +17,7 @@ const ItemCount = ({initialStock, maxStock}) =>{
             alert(`Agregaste ${count} articulos al carrito`)
         )
     } 
-    
+
     return(
         <>
             <div className="itemCountContainer">
