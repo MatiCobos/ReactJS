@@ -10,12 +10,12 @@ const ItemListContainer = ({ title }) => {
     useEffect(() => {
 
         let products = [
-            {id: 1, title: "producto 1", price: 1000, pictureURL: "https://dummyimage.com/200x300/000/fff" },
-            {id: 2, title: "producto 2", price: 2000, pictureURL: "https://dummyimage.com/200x300/000/fff" },
-            {id: 3, title: "producto 3", price: 3000, pictureURL: "https://dummyimage.com/200x300/000/fff" },
-            {id: 4, title: "producto 4", price: 4000, pictureURL: "https://dummyimage.com/200x300/000/fff" },
-            {id: 5, title: "producto 5", price: 5000, pictureURL: "https://dummyimage.com/200x300/000/fff" },
-            {id: 6, title: "producto 6", price: 6000, pictureURL: "https://dummyimage.com/200x300/000/fff" },
+            {id: 1, title: "Home Shirt", price: 60, pictureURL: "/homeShirt.jpg", stock: 5 },
+            {id: 2, title: "Away Shirt", price: 60, pictureURL: "/awayShirt.jpg", stock: 6 },
+            {id: 3, title: "Jacket", price: 150, pictureURL: "/jacket.jpg", stock: 7 },
+            {id: 4, title: "Sweat Pants", price: 100, pictureURL: "/sweatPants.jpg", stock: 8 },
+            {id: 5, title: "Training Polo", price: 75, pictureURL: "trainingPolo.jpg", stock: 9 },
+            {id: 6, title: "Walkout Jacket", price: 170, pictureURL: "walkoutJacket.jpg", stock: 10 },
         ];
 
         new Promise((resolve, reject) => {
@@ -34,7 +34,6 @@ const ItemListContainer = ({ title }) => {
                 <p>{title}</p>
             </div>
             <ItemList productList={productList}/>
-            <ItemCount initialStock={1} maxStock={5}/>
         </>
     )
 }

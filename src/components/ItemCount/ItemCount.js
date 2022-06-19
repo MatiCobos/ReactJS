@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from 'react-bootstrap';
 import './ItemCount.css';
 
-const ItemCount = ({initialStock, maxStock}) =>{
+const ItemCount = ({initialStock, stock}) =>{
     
     const [count, setCount] = useState (initialStock)
     const addCount = () => {
@@ -23,7 +23,7 @@ const ItemCount = ({initialStock, maxStock}) =>{
             <div className="itemCountContainer">
                 <Button onClick={restCount} disabled={count == initialStock}>-</Button>
                 <p>{count}</p>
-                <Button onClick={addCount} disabled={count == maxStock}>+</Button>
+                <Button onClick={addCount} disabled={count === stock}>+</Button>
             </div>
             <div className="addToCartContainer">
                 <Button onClick={()=> addToCart (count)}>Add to cart</Button>
