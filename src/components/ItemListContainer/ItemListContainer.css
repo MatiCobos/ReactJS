@@ -1,3 +1,15 @@
 .itemListContainer{
-    margin: 40px;
+    margin: 40px 0px 40px;
+}
+
+.d-flex{
+    justify-content: center !important;
+}
+
+.form-control{
+    width: 50%;
+}
+
+.form-control:focus{
+    box-shadow: 1px 5px 10px 1px rgb(8, 8, 8) !important;
 }
