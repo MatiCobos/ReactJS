@@ -5,7 +5,7 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 
 const ItemDetailContainer =({title})=> {
 
-    const [productDetail, setProductDetail] = useState([])
+    const [productDetail, setProductDetail] = useState({})
 
     useEffect(() => {
 
@@ -22,8 +22,9 @@ const ItemDetailContainer =({title})=> {
             setTimeout(()=>{
                 resolve(products)
             }, 2000)
-        }).then((res)=>{
-            setProductDetail(res)
+        }).then(res=> {
+            const item = res.find((item)=> item.id === 1)
+            setProductDetail(item)
         })
 
     }, [])
@@ -31,7 +32,7 @@ const ItemDetailContainer =({title})=> {
     return (
         <>  <Container>
                 <Row>
-                    <ItemDetail productDetail={productDetail} />
+                    <ItemDetail {...productDetail} />
                 </Row>
             </Container>
         </>
