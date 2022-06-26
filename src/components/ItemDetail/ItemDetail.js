@@ -1,40 +1,26 @@
 import React from "react";
 import {Card, ListGroup } from 'react-bootstrap';
-import './ItemDetail.css'
+import './ItemDetail.css';
 
 const ItemDetail = ({title, text, price, stock, productCode, pictureURL}) => {
-  return (
-        
-               
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={pictureURL} />
-                <Card.Body>
-                    <Card.Title>{title}</Card.Title>
-                    <Card.Text>{text}</Card.Text>
-                </Card.Body>
-                <ListGroup className="list-group-flush">
-                    <ListGroup.Item>${price}</ListGroup.Item>
-                    <ListGroup.Item>Stock: {stock}</ListGroup.Item>
-                    <ListGroup.Item><u>Produc Code:</u> {productCode}</ListGroup.Item>
-                </ListGroup>
-                <Card.Body>
+    return (
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={pictureURL} />
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>{text}</Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush">
+                <ListGroup.Item>${price}</ListGroup.Item>
+                <ListGroup.Item>Stock: {stock}</ListGroup.Item>
+                <ListGroup.Item><u>Produc Code:</u> {productCode}</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
 
-                </Card.Body>
-            </Card>
-            
-           
+            </Card.Body>
+        </Card>   
     )
 }
 
 
 export default ItemDetail
-
-/* 
-
-productList.map ((item)=>{
-                        return(
-                            <Item key={item.id} id={item.id} title={item.title} before={item.before} price={item.price} pictureURL={item.pictureURL} stock={item.stock}/>
-                        )
-                    })
-
-*/

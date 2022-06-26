@@ -1,11 +1,13 @@
 import {React, useEffect, useState} from 'react'
 import { Container, Row } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
 
 
 const ItemDetailContainer =({title})=> {
 
     const [productDetail, setProductDetail] = useState({})
+    const {itemId} = useParams
 
     useEffect(() => {
 
@@ -23,11 +25,11 @@ const ItemDetailContainer =({title})=> {
                 resolve(products)
             }, 2000)
         }).then(res=> {
-            const item = res.find((item)=> item.id === 1)
+            const item = res.find((item)=> item.id === 1/* Number(itemId) */)
             setProductDetail(item)
         })
 
-    }, [])
+    }, [itemId])
   
     return (
         <>  <Container>

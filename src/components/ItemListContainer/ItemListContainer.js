@@ -32,7 +32,7 @@ const ItemListContainer = ({ title }) => {
                 setProductList(res)
         })
 
-    }, [])
+    }, [categoryId])
 
     return (
         <>

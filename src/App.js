@@ -8,16 +8,15 @@ function App() {
   
   return (
     <div className="App">
-{/*       <BrowserRouter>
+      <BrowserRouter>
         <NavBar />
           <Routes>
             <Route path="/" element={<ItemListContainer title="Sale All"/>} />
             <Route path="/category/:categoryId" element={<ItemListContainer/>} />
             <Route path="/item/:itemyId" element={<ItemDetailContainer/>} />
-          
-        </Routes>
-      </BrowserRouter> */}
-    <ItemDetailContainer />
+          </Routes>
+      </BrowserRouter>
+      {/* <ItemDetailContainer /> */}
       
     </div>
   );
