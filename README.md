@@ -8,7 +8,7 @@ Este es un e-commerce dedicado a la venta de ropa del club Fullham FC de la Prem
 
 # Gif de navegacion
 
-![image]()
+![image](https://github.com/MatiCobos/ReactJS/blob/main/src/media/GifNavegacion.gif)
 
 # Dependencias
 
