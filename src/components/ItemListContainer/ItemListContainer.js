@@ -2,7 +2,7 @@ import {React, useEffect, useState} from 'react'
 import ItemList from '../ItemList/ItemList'
 import {Button} from 'react-bootstrap/';
 import Form from 'react-bootstrap/Form';
-import './ItemListContainer.css'
+import './ItemListContainer.css';
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({ title }) => {
@@ -53,4 +53,4 @@ const ItemListContainer = ({ title }) => {
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;

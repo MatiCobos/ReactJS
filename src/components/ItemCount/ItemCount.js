@@ -14,7 +14,7 @@ const ItemCount = ({initialStock, stock}) =>{
 
     const addToCart = (count) =>{
         return(
-            alert(`Agregaste ${count} articulos al carrito`)
+            alert(`You added ${count} product/s to cart`)
         )
     } 
 

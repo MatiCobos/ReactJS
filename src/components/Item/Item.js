@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
-import './Item.css'
+import './Item.css';
 
 const Item = ({id, price, title, pictureURL, stock, before}) =>{
     return (
@@ -22,8 +22,7 @@ const Item = ({id, price, title, pictureURL, stock, before}) =>{
                     </Link>
                 </Button>
             </Card.Body>
-        </Card>
-        
+        </Card> 
     )
 }
 

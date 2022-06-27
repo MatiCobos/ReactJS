@@ -4,6 +4,7 @@ import './ItemList.css'
 import { Container, Row } from "react-bootstrap";
 
 const ItemList = ({productList}) => {
+
     return(
         <Container>
             <Row>
@@ -21,4 +22,4 @@ const ItemList = ({productList}) => {
     )  
 };
 
-export default ItemList
+export default ItemList;

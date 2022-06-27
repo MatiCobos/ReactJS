@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import './CartWidget.css'
+import './CartWidget.css';
 
 const CartWidget = () => {
     
@@ -10,4 +10,4 @@ const CartWidget = () => {
     )
 }
 
-export default CartWidget
+export default CartWidget;

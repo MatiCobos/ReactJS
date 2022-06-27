@@ -41,4 +41,5 @@ button:focus:not(:focus-visible) {
 
 .addToCartContainer{
     padding: 20px;
+    text-align: center;
 }
