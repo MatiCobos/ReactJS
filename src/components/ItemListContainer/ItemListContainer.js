@@ -15,7 +15,7 @@ const ItemListContainer = ({ title }) => {
         let products = [
             {id: 1, title: "Home Shirt", before: 70, price: 60, pictureURL: "/homeShirt.jpg", stock: 5, category: "shirt" },
             {id: 2, title: "Away Shirt", before: 70, price: 60, pictureURL: "/awayShirt.jpg", stock: 6, category: "shirt" },
-            {id: 3, title: "Jacket", before: 200, price: 150, pictureURL: "/jacket.jpg", stock: 7, category: "jacket" },
+            {id: 3, title: "Mens padded jacket", before: 200, price: 150, pictureURL: "/jacket.jpg", stock: 7, category: "jacket" },
             {id: 4, title: "Sweat Pants", before: 120, price: 100, pictureURL: "/sweatPants.jpg", stock: 8, category: "pants" },
             {id: 5, title: "Training Polo", before: 100, price: 75, pictureURL: "/trainingPolo.jpg", stock: 9, category: "polo" },
             {id: 6, title: "Walkout Jacket", before: 200, price: 170, pictureURL: "/walkoutJacket.jpg", stock: 10, category: "jacket" },

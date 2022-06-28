@@ -8,7 +8,7 @@ const ItemDetailContainer = ({ title }) => {
 
     const [productDetail, setProductDetail] = useState({})
     const [loading, setLoading] = useState (true)
-    const { itemId } = useParams()
+    const { itemId } = useParams ()
 
     useEffect(() => {
 

@@ -41,4 +41,9 @@
     color: none
 }
 
+#textStyle{
+    text-decoration: none !important;
+    color: black;
+}
+
 

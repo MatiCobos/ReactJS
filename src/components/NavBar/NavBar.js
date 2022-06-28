@@ -31,22 +31,22 @@ const NavBar = () => {
                         </Navbar.Text>
                         <NavDropdown title="Products" id="basic-nav-dropdown">
                             <NavDropdown.Item>
-                                <Link to={"/category/jacket"}>
+                                <Link to={"/category/jacket"} id="textStyle">
                                     Jacket
                                 </Link>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
-                                <Link to={"/category/polo"}>
+                                <Link to={"/category/polo"} id="textStyle">
                                     Polo
                                 </Link>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
-                                <Link to={"/category/pants"}>
+                                <Link to={"/category/pants"} id="textStyle">
                                     Pants
                                 </Link>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
-                                <Link to={"/category/shirt"}>
+                                <Link to={"/category/shirt"} id="textStyle">
                                     Shirts
                                 </Link>
                             </NavDropdown.Item>
