@@ -4,6 +4,12 @@ import ItemCount from '../ItemCount/ItemCount';
 
 const ItemDetail = ({title, text, price, stock, productCode, pictureURL}) => {
 
+    const onAdd = (count) =>{
+        return(
+            alert(`You added ${count} product/s to cart`)
+        )
+    }
+
     return (
     <>
         <div className="container">
@@ -16,7 +22,7 @@ const ItemDetail = ({title, text, price, stock, productCode, pictureURL}) => {
                 <p>Price: ${price}</p>
                 <p>Available stock: {stock}</p>
                 <p>Product code: {productCode}</p> 
-                <ItemCount initialStock={1} stock={stock}/> 
+                <ItemCount initialStock={1} stock={stock} onAdd={onAdd}/> 
             </div>
         </div>
     </> 
