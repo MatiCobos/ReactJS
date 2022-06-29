@@ -1,6 +1,6 @@
 # Curso React JS - CoderHouse
 
-Matias Cobos
+Matias Cobos.
 
 # E-Commerce
 
@@ -14,12 +14,16 @@ Este es un e-commerce dedicado a la venta de ropa del club Fullham FC de la Prem
 
 ### `npm install react-bootstrap bootstrap`
 
-Libreria y estilos de la página
+Libreria y estilos de la página.
 
 ### `npm i bootstrap-icons`
 
-Usamos los icons que nos provee Bootstrap
+Usamos los icons que nos provee Bootstrap.
 
 ### `npm i react-router-dom`
 
-Hacemos el ruteo por la web
+Hacemos el ruteo por la web.
+
+### `npm install sweetalert2`
+
+Libreria de popup.
